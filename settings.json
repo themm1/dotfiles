@@ -1,0 +1,167 @@
+{
+    // editor
+    "workbench.editor.enablePreview": false,
+    // "files.autoSave": "afterDelay",
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "diffEditor.maxComputationTime": 0,
+    "editor.cursorSurroundingLines": 10,
+    "editor.rulers": [79],
+    "editor.lineNumbers": "relative",
+    "editor.formatOnSave": false,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "editor.detectIndentation": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    },
+    // "editor.cursorBlinking": "solid",
+    // "editor.cursorStyle": "block",
+    "workbench.editorAssociations": {
+      "*.ipynb": "jupyter-notebook",
+      "*.csv": "default",
+      "*.xz": "default"
+    },
+  
+    // editor appearance
+    "editor.fontSize": 13,
+    "explorer.confirmDragAndDrop": false,
+    "zenMode.fullScreen": false,
+    "zenMode.hideLineNumbers": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.fontFamily": "\"Hack\"",
+    "editor.minimap.enabled": true,
+    "outline.showVariables": false,
+  
+    "editor.tokenColorCustomizations": {
+      "variables": "#ABB2BF"
+    },
+    // terminal
+    "terminal.integrated.enablePersistentSessions": false,
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "terminal.integrated.sendKeybindingsToShell": false,
+    "terminal.integrated.commandsToSkipShell": [
+      "- workbench.action.quickOpen",
+      "- workbench.action.terminal.focusFind"
+    ],
+    "terminal.integrated.defaultProfile.windows": "cmder",
+    "terminal.integrated.profiles.windows": {
+      "cmder": {
+        "path": "C:\\WINDOWS\\System32\\cmd.exe",
+        "args": ["/K", "C:\\Program Files\\cmder\\vendor\\init.bat"]
+      },
+      "Git Bash": {
+        "source": "Git Bash"
+      },
+      "Command Prompt": {
+        "path": ["${env:windir}\\System32\\cmd.exe"],
+        "args": [],
+        "icon": "terminal-cmd"
+      }
+    },
+  
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    // terminal appearance
+    "terminal.integrated.fontSize": 13,
+    "workbench.colorCustomizations": {
+      "terminal.background": "#282C34",
+      "terminal.foreground": "#ABB2BF",
+      "terminalCursor.background": "#ABB2BF",
+      "terminalCursor.foreground": "#ABB2BF",
+      "terminal.ansiBlack": "#282C34",
+      "terminal.ansiBlue": "#61AFEF",
+      "terminal.ansiBrightBlack": "#545862",
+      "terminal.ansiBrightBlue": "#61AFEF",
+      "terminal.ansiBrightCyan": "#56B6C2",
+      "terminal.ansiBrightGreen": "#98C379",
+      "terminal.ansiBrightMagenta": "#C678DD",
+      "terminal.ansiBrightRed": "#E06C75",
+      "terminal.ansiBrightWhite": "#C8CCD4",
+      "terminal.ansiBrightYellow": "#E5C07B",
+      "terminal.ansiCyan": "#56B6C2",
+      "terminal.ansiGreen": "#98C379",
+      "terminal.ansiMagenta": "#C678DD",
+      "terminal.ansiRed": "#E06C75",
+      "terminal.ansiWhite": "#ABB2BF",
+      "terminal.ansiYellow": "#E5C07B"
+    },
+  
+    // languages
+    "python.terminal.executeInFileDir": true,
+    "python.analysis.autoImportCompletions": false,
+    "python.formatting.provider": "none",
+    // "python.formatting.autopep8Args": [
+      // "--aggressive",
+      // "--aggressive",
+      // "--max-line-length=80"
+    // ],
+  
+    "javascript.updateImportsOnFileMove.enabled": "always",
+  
+    "[python]": {
+      "editor.wordBasedSuggestions": true,
+      "editor.formatOnSave": true
+    },
+    "[cpp]": {
+    },
+    "[html]": {
+      "editor.tabSize": 2
+    },
+    "[javascript]": {
+      "editor.tabSize": 2
+    },
+    "[jsonc]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+  
+    // extensions
+    "editor.smoothScrolling": true,
+    "vscode-neovim.useWSL": true,
+    "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
+    "git.confirmSync": false,
+    "window.enableMenuBarMnemonics": false,
+  
+    "jupyter.askForKernelRestart": false,
+    "autoDocstring.docstringFormat": "sphinx-notypes",
+    "autoDocstring.startOnNewLine": true,
+    "python.analysis.typeCheckingMode": "basic",
+    "python.linting.pylintEnabled": false,
+    "workbench.colorTheme": "Atom One Dark",
+    "excalidraw.theme": "auto",
+    "clangd.onConfigChanged": "restart",
+    "clangd.arguments": [
+      "-header-insertion=never",
+      // "Diagnostics:   Suppress: \"*\""
+    ],
+    "latex-workshop.latex.autoClean.run": "onBuilt",
+    "latex-workshop.latex.clean.fileTypes":[
+      "*.aux",
+      "*.bbl",
+      "*.blg",
+      "*.idx",
+      "*.ind",
+      "*.lof",
+      "*.lot",
+      "*.out",
+      "*.toc",
+      "*.acn",
+      "*.acr",
+      "*.alg",
+      "*.glg",
+      "*.glo",
+      "*.gls",
+      "*.fls",
+      "*.log",
+      "*.fdb_latexmk",
+      "*.snm",
+      "*.synctex(busy)",
+      "*.synctex.gz(busy)",
+      "*.synctex.gz",
+      "*.nav",
+      "*.vrb"
+    ],
+    "latex-workshop.view.pdf.invert": 0,
+    "window.zoomLevel": -1,
+    // "latex-workshop.view.pdf.invertMode.grayscale": 0
+  
+  }
+  
