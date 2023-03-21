@@ -1,22 +1,29 @@
 :set number
 :set relativenumber
-:set autoindent
-:set tabstop=4
-:set shiftwidth=4
 :set smarttab
 :set mouse=a
 :set clipboard+=unnamedplus
 :set scrolloff=10
 :set nohlsearch
 :set smartindent
+:set paste
 
-" brackets autocomplete
-inoremap { {}<Esc>ha
-inoremap ( ()<Esc>ha
-inoremap [ []<Esc>ha
-inoremap " ""<Esc>ha
-inoremap ' ''<Esc>ha
-inoremap ` ``<Esc>ha
+" configure expanding of tabs for various file types
+au BufRead,BufNewFile *.py set expandtab
+au BufRead,BufNewFile *.cpp set expandtab
+au BufRead,BufNewFile *.h set expandtab
+
+" --------------------------------------------------------------------------------
+" configure editor with tabs and nice stuff...
+" --------------------------------------------------------------------------------
+set expandtab           " enter spaces when tab is pressed
+set tabstop=8           " use 4 spaces to represent tab
+set softtabstop=8
+set shiftwidth=8       " number of spaces to use for auto indent
+set autoindent          " copy indent from current line when starting a new line
+
+" make backspaces more powerfull
+set backspace=indent,eol,start
 
 " set block cursor in normal mode, normal cursor in insert mode
 let &t_SI = "\e[6 q"
@@ -30,14 +37,7 @@ set ttimeoutlen=1
 set ttyfast
 
 " disable brackets highlighting
-let g:loaded_matchparen=1
-
-" use spaces instead of tabs
-set tabstop     =4
-set softtabstop =4
-set shiftwidth  =4
-set expandtab
-
+" let g:loaded_matchparen=1
 
 " WSL yank support
 let s:clip = '/mnt/c/Windows/System32/clip.exe'  " change this path according to your mount point
