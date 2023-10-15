@@ -1,0 +1,22 @@
+format = """
+$directory\
+$git_branch
+\\$ 
+"""
+
+[directory]
+truncate_to_repo = false
+truncation_length = 10
+truncation_symbol = ".../"
+
+[python]
+format = '[(\(py $virtualenv\) )]($style)'
+style = "blue bold"
+
+[git_branch]
+format = '[\(git $branch(:$remote_branch)\)]($style) '
+style = "blue bold"
+
+[git_status]
+disabled = true
+
