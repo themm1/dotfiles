@@ -2,18 +2,21 @@ eval "$(starship init zsh)"
 
 source $HOME/.config/antigen.zsh 
 
-# antigen bundle jeffreytse/zsh-vi-mode 
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-syntax-highlighting
 
-alias n=nvim
 alias python=python3
 alias py=python3
+alias cf="~/other/cf_v1.0.5_linux_64/cf"
+alias make_stress_test="bash ~/code/cp-utils/stress-testing/make_stress_test.sh"
 alias venv="source venv/bin/activate"
-alias alacfg="n '/mnt/c/users/madzi/scoop/persist/alacritty/alacritty.yml'"
+alias alacfg="vim '/mnt/c/users/madzi/scoop/persist/alacritty/alacritty.yml'"
 alias cdc="cd '/mnt/c'"
 alias cdd="cd '/mnt/d'"
+alias tmux='tmux -2'
+
+TERM=xterm-256color
 
 # vi mode
 bindkey -v
@@ -43,6 +46,4 @@ setopt HIST_SAVE_NO_DUPS
 setopt appendhistory
 
 antigen apply
-
-
 
