@@ -32,40 +32,43 @@ font:
     x: 0
     y: 0
 
-# colorscheme import (currently off)
+# colorscheme import
 # import:
-#   - ~/.alacritty-colorscheme/themes/gruvbox_light.yaml
+#   - ~/.alacritty-colorscheme/themes/mariana.yaml
 
-# colorscheme (gruvbox light normal_white modified)
+# Colors - https://github.com/olimorris/onedarkpro.nvim
 colors:
-  # Default colors
   primary:
-    background: '0xfbf1c8'
-    foreground: '0x3c3836'
+    background: '#282c34'
+    foreground: '#abb2bf'
 
-  # Normal colors
   normal:
-    black:   '0xfbf1c7'
-    red:     '0xcc241d'
-    green:   '0x98971a'
-    yellow:  '0xd79921'
-    blue:    '0x458588'
-    magenta: '0xb16286'
-    cyan:    '0x689d6a'
-    # white:   '0x7c6f64'
-    white:   '#eee0b7'
+    black:      '#282c34'
+    red:        '#e06c75'
+    green:      '#98c379'
+    yellow:     '#e5c07b'
+    blue:       '#61afef'
+    magenta:    '#c678dd'
+    cyan:       '#56b6c2'
+    white:      '#abb2bf'
 
-
-  # Bright colors
   bright:
-    black:   '0x928374'
-    red:     '0x9d0006'
-    green:   '0x79740e'
-    yellow:  '0xb57614'
-    blue:    '0x076678'
-    magenta: '0x8f3f71'
-    cyan:    '0x427b58'
-    white:   '0x3c3836'
+    black:      '#3e4451'
+    red:        '#e9969d'
+    green:      '#b3d39c'
+    yellow:     '#edd4a6'
+    blue:       '#8fc6f4'
+    magenta:    '#d7a1e7'
+    cyan:       '#7bc6d0'
+    white:      '#c8cdd5'
+
+  cursor:
+    text: CellBackground
+    cursor: CellForeground # syntax-cursor-color
+
+  selection:
+    text: CellForeground
+    background: '#5c6370'
 
 scrolling:
   # Maximum number of lines in the scrollback buffer.
