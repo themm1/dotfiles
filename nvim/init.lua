@@ -1,0 +1,11 @@
+vim.cmd.source(vim.fn.stdpath("config") .. "/vimcfg.vim")
+require("vimplug")
+require("colorcheme")
+require("telescope")
+require("treesitter")
+require("cinnamoncfg")
+require("lsp-zerocfg")
+require("luasnipcfg")
+require("nvim-treecfg")
+require("commentcfg")
+

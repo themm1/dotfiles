@@ -1,0 +1,68 @@
+live_config_reload = true
+
+[colors.bright]
+black = "#3e4451"
+blue = "#8fc6f4"
+cyan = "#7bc6d0"
+green = "#b3d39c"
+magenta = "#d7a1e7"
+red = "#e9969d"
+white = "#c8cdd5"
+yellow = "#edd4a6"
+
+[colors.cursor]
+
+cursor = "CellForeground"
+
+text = "CellBackground"
+
+[colors.normal]
+black = "#282c34"
+blue = "#61afef"
+
+cyan = "#56b6c2"
+green = "#98c379"
+magenta = "#c678dd"
+red = "#e06c75"
+white = "#abb2bf"
+yellow = "#e5c07b"
+
+[colors.primary]
+
+background = "#282c34"
+foreground = "#abb2bf"
+
+
+[colors.selection]
+background = "#5c6370"
+text = "CellForeground"
+
+[font]
+size = 11
+
+[font.glyph_offset]
+x = 0
+y = 0
+
+[font.normal]
+family = "Hack Nerd Font"
+
+
+[font.offset]
+x = 0
+y = 2
+
+[scrolling]
+history = 10000
+multiplier = 10
+
+
+[shell]
+args = ["--cd ~", "tmux attach || tmux new -s main"]
+program = 'C:\Windows\System32\wsl.exe'
+
+[window.padding]
+x = 10
+
+y = 10
+

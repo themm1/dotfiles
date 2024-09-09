@@ -11,10 +11,6 @@ alias py=python3
 alias cf="~/other/cf_v1.0.5_linux_64/cf"
 alias make_stress_test="bash ~/code/cp-utils/stress-testing/make_stress_test.sh"
 alias venv="source venv/bin/activate"
-alias alacfg="vim '/mnt/c/users/madzi/scoop/persist/alacritty/alacritty.yml'"
-alias cdc="cd '/mnt/c'"
-alias cdd="cd '/mnt/d'"
-alias tmux='tmux -2'
 
 TERM=xterm-256color
 
