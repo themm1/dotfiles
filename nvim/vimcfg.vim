@@ -10,7 +10,7 @@ set nohlsearch
 " No empty column on left
 set scl=no
 " Disable line wrapping
-set wrap!
+" set wrap!
 " Incremental search on
 set incsearch
 
@@ -30,6 +30,8 @@ nnoremap <leader>s :set hls!<CR>
 " Move selected block
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
+vnoremap < <gv
+vnoremap > >gv
 
 " Cursor stays at the beggining when J
 nnoremap J mzJ`z
@@ -64,5 +66,7 @@ vnoremap <silent> <leader>0 :exe "tabn ".g:lasttab<cr>
 autocmd BufRead,BufNewFile * set laststatus=0
 
 " Append template to new C++ files
-autocmd BufNewFile *.cpp 0r /home/madzin/cp-utils/templates/template.cpp
+autocmd BufNewFile *.cpp 0r /home/madzin/code/cp-utils/templates/template.cpp
+
+autocmd BufNewFile,BufRead *.in set filetype=text
 

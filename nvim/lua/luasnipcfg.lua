@@ -10,3 +10,7 @@ vim.keymap.set({"s", "n"}, "<C-E>", function()
 		ls.change_choice(1)
 	end
 end, {silent = true})
+
+require('luasnip.loaders.from_vscode').load({ paths = '~/dotfiles/nvim/snippets'})
+
+

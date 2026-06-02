@@ -17,6 +17,6 @@ style = "blue bold"
 format = '[\(git $branch(:$remote_branch)\)]($style) '
 style = "blue bold"
 
+
 [git_status]
 disabled = true
-

@@ -14,20 +14,16 @@ Plug('olimorris/onedarkpro.nvim')
 Plug('declancm/cinnamon.nvim')
 
 -- Syntax highlighting
-Plug('nvim-treesitter/nvim-treesitter', {['do'] = ':TSUpdate'})
+Plug('nvim-treesitter/nvim-treesitter', { ['do'] = ':TSUpdate' })
 Plug('nvim-lua/plenary.nvim')
 
 -- Fuzzy finder
-Plug('nvim-telescope/telescope.nvim', {['tag'] = '0.1.8'})
-
--- Vim git
-Plug('tpope/vim-fugitive')
+Plug('nvim-telescope/telescope.nvim', { ['tag'] = '0.1.8' })
 
 -- LSP and autocompletion
 Plug('neovim/nvim-lspconfig')
 Plug('hrsh7th/nvim-cmp')
 Plug('hrsh7th/cmp-nvim-lsp')
-Plug('VonHeikemen/lsp-zero.nvim', {['branch'] = 'v4.x'})
 Plug('L3MON4D3/LuaSnip')
 Plug('saadparwaiz1/cmp_luasnip')
 
@@ -37,5 +33,10 @@ Plug('nvim-tree/nvim-web-devicons')
 -- Comment toggle
 Plug('numToStr/Comment.nvim')
 
-vim.call('plug#end')
+Plug('NeogitOrg/neogit')
 
+-- Live previews of latex, md...
+Plug('frabjous/knap')
+
+
+vim.call('plug#end')
