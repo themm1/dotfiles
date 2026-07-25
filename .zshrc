@@ -1,5 +1,22 @@
 eval "$(starship init zsh)"
 
+eval "$(fzf --zsh)"
+eval "$(zoxide init zsh)"
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
+export FZF_DEFAULT_OPTS="
+--preview '
+if [ -d {} ]; then
+  eza -la --tree --level=2 {};
+else
+  bat --style=numbers --color=always {};
+fi'
+--preview-window=right:60%
+"
+
+export FZF_CTRL_R_OPTS='--no-preview'
+
 source $HOME/.config/antigen.zsh 
 
 antigen bundle zsh-users/zsh-autosuggestions
@@ -8,11 +25,13 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 
 alias python=python3
 alias py=python3
-alias cf="~/other/cf_v1.0.5_linux_64/cf"
 alias make_stress_test="bash ~/code/cp-utils/stress-testing/make_stress_test.sh"
 alias venv="source venv/bin/activate"
 
 TERM=xterm-256color
+
+export EDITOR=nvim
+export VISUAL=nvim
 
 # vi mode
 bindkey -v
@@ -39,7 +58,25 @@ setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_IGNORE_SPACE
 setopt HIST_FIND_NO_DUPS
 setopt HIST_SAVE_NO_DUPS
-setopt appendhistory
+setopt APPEND_HISTORY
+setopt SHARE_HISTORY
+setopt INC_APPEND_HISTORY
 
 antigen apply
 
+# #
+# # Use powerline
+# #
+# USE_POWERLINE="true"
+# # Has weird character width
+# # Example:
+# #    is not a diamond
+# HAS_WIDECHARS="false"
+# # Source manjaro-zsh-configuration
+# if [[ -e /usr/share/zsh/manjaro-zsh-config ]]; then
+#   source /usr/share/zsh/manjaro-zsh-config
+# fi
+# # Use manjaro zsh prompt
+# if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
+#   source /usr/share/zsh/manjaro-zsh-prompt
+# fi
